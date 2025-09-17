@@ -8,9 +8,8 @@ The final goal is to measure **accuracy, latency, and cost trade-offs** and comp
 
 ## ROI Formula
 
-\[
-\text{ROI} = \frac{\text{Cost Savings (70B - 8B)}}{\text{Accuracy Loss (if any)}}
-\]
+<img width="788" height="95" alt="image" src="https://github.com/user-attachments/assets/b243a109-9cbd-4436-9fdc-f9724bc9fa69" />
+
 
 - **Cost Savings** = Cost(70B) – Cost(8B)  
 - **Accuracy Loss** = Accuracy(70B) – Accuracy(8B)  
@@ -42,9 +41,4 @@ The final goal is to measure **accuracy, latency, and cost trade-offs** and comp
 
 ---
 
-## Usage
 
-You can calculate ROI for your own test cases using the provided Python script:
-
-```bash
-python roi_calculator.py
