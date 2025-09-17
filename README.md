@@ -44,11 +44,5 @@ Llama 3 70B Instruct
 Input: $0.00265 per 1,000 tokens
 Output: $0.0035 per 1,000 tokens
 Case 1 Total ≈ $0.0004699
- 
-
-## Next Steps
-1. Run additional test cases with different paragraphs/domains.  
-2. Record accuracy (manual scoring or automatic metrics like ROUGE).  
-3. Add cost estimates once billing reports update.  
-4. Build an **ROI Calculator** that compares cost savings and accuracy trade-offs between 70B and 8B.  
+  
 
