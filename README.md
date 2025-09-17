@@ -21,10 +21,29 @@ We tested summarization of sample paragraphs using both models. The same text in
 | Llama 3 8B Instruct | 69           | 73            | 653          | Faster, concise output |
 | Llama 3 70B Instruct | 69           | 82            | 1318         | Longer summary, higher latency |
 
-### Notes
+### Observations
 - Latency increases with larger models.  
-- Output length varied slightly, with 70B producing a more detailed summary.  
-- Billing data is not instant. AWS Bedrock usage costs appear in the **Billing & Cost Management Dashboard** after ~24 hours.  
+- Output length varied slightly, with 70B producing a more detailed summary.
+- The **8B model** was faster and significantly cheaper (~6.5x lower cost)
+- Billing data is not instant. AWS Bedrock usage costs appear in the **Billing & Cost Management Dashboard** after ~24 hours.
+
+### Comparison
+- Accuracy → 8B: good enough detail, 70B: overly detailed
+- Latency → 8B: 653ms, 70B: 1318ms
+- Cost → 70B ≈ 6.5× more expensive than 8B for this input/output size
+  
+- (Since very tiny tests were run, costs are minimal hence, it is calculated via manually estimate using token counts × pricing.
+- (Source: AWS Bedrock Pricing)
+
+Llama 3 8B Instruct
+Input: $0.0004 per 1,000 tokens
+Output: $0.0006 per 1,000 tokens
+Case 1 Total ≈ $0.0000714
+
+Llama 3 70B Instruct
+Input: $0.00265 per 1,000 tokens
+Output: $0.0035 per 1,000 tokens
+Case 1 Total ≈ $0.0004699
  
 
 ## Next Steps
