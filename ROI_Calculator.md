@@ -16,6 +16,12 @@ The final goal is to measure **accuracy, latency, and cost trade-offs** and comp
 - If there is no accuracy loss, ROI = ∞ (infinite ROI).  
 
 ---
+## ROI inferences
+-It’s a ratio, so it can be:
+  ->1 → Good (higher is better: more savings for small accuracy loss).
+  -=1 → Neutral (savings equal to loss).
+  -<1 → Bad (you lose too much accuracy compared to money saved).
+  -∞ → If the smaller model is more accurate and cheaper (rare but possible).
 
 ## Experiment Setup
 
