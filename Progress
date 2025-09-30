@@ -3,6 +3,12 @@ progress : familiarised myself with bedrock agents, started hands on activities 
 feedback : more hands on experimentation to be done on AWS bedrock and i must create a streamlit application that streamlines this comparison such that it is easy to understand for people unfamiliar with it. 
 
 week 2 
-progress : 
+progress : created a simple streamlit application, backed by 3 programs (#1- app.py - UI, #2- roi_function.py -performs calculations, #3- sample data.py- contains hypothetical data about 10 teacher and 10 student models with only cost being verified);
+The user gets to select teacher model, student model, application use case and compares both their features, an optimized mode gives 3 most suited student models based on teacher and application selected
 feedback :
+- UI looks good, but we need to put verified values for parameters in sample data file
+- The teachers and students must be available on AWS as this prototype must cater to it
 
+week3
+progress : 
+feedback : 
